@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C177782A26D9D2E2000B14F4 /* ScanPdfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177782926D9D2E2000B14F4 /* ScanPdfApp.swift */; };
+		C177782C26D9D2E3000B14F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177782B26D9D2E3000B14F4 /* ContentView.swift */; };
+		C177782E26D9D2E8000B14F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C177782D26D9D2E8000B14F4 /* Assets.xcassets */; };
+		C177783126D9D2E8000B14F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C177783026D9D2E8000B14F4 /* Preview Assets.xcassets */; };
+		C177783C26D9D2E8000B14F4 /* ScanPdfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177783B26D9D2E8000B14F4 /* ScanPdfTests.swift */; };
+		C177784726D9D2E8000B14F4 /* ScanPdfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177784626D9D2E8000B14F4 /* ScanPdfUITests.swift */; };
+		C177785626D9E1F6000B14F4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C177785526D9E1F6000B14F4 /* CodeScanner */; };
+		C177785A26D9E256000B14F4 /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177785926D9E256000B14F4 /* QRCodeScannerView.swift */; };
+		C177785E26D9EDED000B14F4 /* PdfConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177785D26D9EDED000B14F4 /* PdfConverter.swift */; };
+		C177786326D9F95D000B14F4 /* FileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C177786226D9F95D000B14F4 /* FileTool.swift */; };
+		C177786626DA34E5000B14F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C177786526DA34E5000B14F4 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C177783826D9D2E8000B14F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C177781E26D9D2E1000B14F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C177782526D9D2E2000B14F4;
+			remoteInfo = ScanPdf;
+		};
+		C177784326D9D2E8000B14F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C177781E26D9D2E1000B14F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C177782526D9D2E2000B14F4;
+			remoteInfo = ScanPdf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C177782626D9D2E2000B14F4 /* ScanPdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanPdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C177782926D9D2E2000B14F4 /* ScanPdfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPdfApp.swift; sourceTree = "<group>"; };
+		C177782B26D9D2E3000B14F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C177782D26D9D2E8000B14F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C177783026D9D2E8000B14F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C177783226D9D2E8000B14F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C177783726D9D2E8000B14F4 /* ScanPdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanPdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C177783B26D9D2E8000B14F4 /* ScanPdfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPdfTests.swift; sourceTree = "<group>"; };
+		C177783D26D9D2E8000B14F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C177784226D9D2E8000B14F4 /* ScanPdfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanPdfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C177784626D9D2E8000B14F4 /* ScanPdfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPdfUITests.swift; sourceTree = "<group>"; };
+		C177784826D9D2E8000B14F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C177785926D9E256000B14F4 /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		C177785D26D9EDED000B14F4 /* PdfConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfConverter.swift; sourceTree = "<group>"; };
+		C177786226D9F95D000B14F4 /* FileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C177782326D9D2E2000B14F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C177785626D9E1F6000B14F4 /* CodeScanner in Frameworks */,
+				C177786626DA34E5000B14F4 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177783426D9D2E8000B14F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177783F26D9D2E8000B14F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C177781D26D9D2E1000B14F4 = {
+			isa = PBXGroup;
+			children = (
+				C177782826D9D2E2000B14F4 /* ScanPdf */,
+				C177783A26D9D2E8000B14F4 /* ScanPdfTests */,
+				C177784526D9D2E8000B14F4 /* ScanPdfUITests */,
+				C177782726D9D2E2000B14F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C177782726D9D2E2000B14F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C177782626D9D2E2000B14F4 /* ScanPdf.app */,
+				C177783726D9D2E8000B14F4 /* ScanPdfTests.xctest */,
+				C177784226D9D2E8000B14F4 /* ScanPdfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C177782826D9D2E2000B14F4 /* ScanPdf */ = {
+			isa = PBXGroup;
+			children = (
+				C177785F26D9F92C000B14F4 /* network */,
+				C177782926D9D2E2000B14F4 /* ScanPdfApp.swift */,
+				C177782B26D9D2E3000B14F4 /* ContentView.swift */,
+				C177782D26D9D2E8000B14F4 /* Assets.xcassets */,
+				C177783226D9D2E8000B14F4 /* Info.plist */,
+				C177782F26D9D2E8000B14F4 /* Preview Content */,
+				C177785926D9E256000B14F4 /* QRCodeScannerView.swift */,
+				C177785D26D9EDED000B14F4 /* PdfConverter.swift */,
+			);
+			path = ScanPdf;
+			sourceTree = "<group>";
+		};
+		C177782F26D9D2E8000B14F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C177783026D9D2E8000B14F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C177783A26D9D2E8000B14F4 /* ScanPdfTests */ = {
+			isa = PBXGroup;
+			children = (
+				C177783B26D9D2E8000B14F4 /* ScanPdfTests.swift */,
+				C177783D26D9D2E8000B14F4 /* Info.plist */,
+			);
+			path = ScanPdfTests;
+			sourceTree = "<group>";
+		};
+		C177784526D9D2E8000B14F4 /* ScanPdfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C177784626D9D2E8000B14F4 /* ScanPdfUITests.swift */,
+				C177784826D9D2E8000B14F4 /* Info.plist */,
+			);
+			path = ScanPdfUITests;
+			sourceTree = "<group>";
+		};
+		C177785F26D9F92C000B14F4 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				C177786226D9F95D000B14F4 /* FileTool.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C177782526D9D2E2000B14F4 /* ScanPdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C177784B26D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdf" */;
+			buildPhases = (
+				C177782226D9D2E2000B14F4 /* Sources */,
+				C177782326D9D2E2000B14F4 /* Frameworks */,
+				C177782426D9D2E2000B14F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanPdf;
+			packageProductDependencies = (
+				C177785526D9E1F6000B14F4 /* CodeScanner */,
+				C177786526DA34E5000B14F4 /* Alamofire */,
+			);
+			productName = ScanPdf;
+			productReference = C177782626D9D2E2000B14F4 /* ScanPdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C177783626D9D2E8000B14F4 /* ScanPdfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C177784E26D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdfTests" */;
+			buildPhases = (
+				C177783326D9D2E8000B14F4 /* Sources */,
+				C177783426D9D2E8000B14F4 /* Frameworks */,
+				C177783526D9D2E8000B14F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C177783926D9D2E8000B14F4 /* PBXTargetDependency */,
+			);
+			name = ScanPdfTests;
+			productName = ScanPdfTests;
+			productReference = C177783726D9D2E8000B14F4 /* ScanPdfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C177784126D9D2E8000B14F4 /* ScanPdfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C177785126D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdfUITests" */;
+			buildPhases = (
+				C177783E26D9D2E8000B14F4 /* Sources */,
+				C177783F26D9D2E8000B14F4 /* Frameworks */,
+				C177784026D9D2E8000B14F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C177784426D9D2E8000B14F4 /* PBXTargetDependency */,
+			);
+			name = ScanPdfUITests;
+			productName = ScanPdfUITests;
+			productReference = C177784226D9D2E8000B14F4 /* ScanPdfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C177781E26D9D2E1000B14F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C177782526D9D2E2000B14F4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C177783626D9D2E8000B14F4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C177782526D9D2E2000B14F4;
+					};
+					C177784126D9D2E8000B14F4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C177782526D9D2E2000B14F4;
+					};
+				};
+			};
+			buildConfigurationList = C177782126D9D2E1000B14F4 /* Build configuration list for PBXProject "ScanPdf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C177781D26D9D2E1000B14F4;
+			packageReferences = (
+				C177785426D9E1F6000B14F4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				C177786426DA34E5000B14F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = C177782726D9D2E2000B14F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C177782526D9D2E2000B14F4 /* ScanPdf */,
+				C177783626D9D2E8000B14F4 /* ScanPdfTests */,
+				C177784126D9D2E8000B14F4 /* ScanPdfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C177782426D9D2E2000B14F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C177783126D9D2E8000B14F4 /* Preview Assets.xcassets in Resources */,
+				C177782E26D9D2E8000B14F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177783526D9D2E8000B14F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177784026D9D2E8000B14F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C177782226D9D2E2000B14F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C177785E26D9EDED000B14F4 /* PdfConverter.swift in Sources */,
+				C177786326D9F95D000B14F4 /* FileTool.swift in Sources */,
+				C177782C26D9D2E3000B14F4 /* ContentView.swift in Sources */,
+				C177782A26D9D2E2000B14F4 /* ScanPdfApp.swift in Sources */,
+				C177785A26D9E256000B14F4 /* QRCodeScannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177783326D9D2E8000B14F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C177783C26D9D2E8000B14F4 /* ScanPdfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C177783E26D9D2E8000B14F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C177784726D9D2E8000B14F4 /* ScanPdfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C177783926D9D2E8000B14F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C177782526D9D2E2000B14F4 /* ScanPdf */;
+			targetProxy = C177783826D9D2E8000B14F4 /* PBXContainerItemProxy */;
+		};
+		C177784426D9D2E8000B14F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C177782526D9D2E2000B14F4 /* ScanPdf */;
+			targetProxy = C177784326D9D2E8000B14F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C177784926D9D2E8000B14F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C177784A26D9D2E8000B14F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C177784C26D9D2E8000B14F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScanPdf/Preview Content\"";
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScanPdf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C177784D26D9D2E8000B14F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScanPdf/Preview Content\"";
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScanPdf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C177784F26D9D2E8000B14F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				INFOPLIST_FILE = ScanPdfTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanPdf.app/ScanPdf";
+			};
+			name = Debug;
+		};
+		C177785026D9D2E8000B14F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				INFOPLIST_FILE = ScanPdfTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanPdf.app/ScanPdf";
+			};
+			name = Release;
+		};
+		C177785226D9D2E8000B14F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				INFOPLIST_FILE = ScanPdfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScanPdf;
+			};
+			name = Debug;
+		};
+		C177785326D9D2E8000B14F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEB5UK9762;
+				INFOPLIST_FILE = ScanPdfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyf.ScanPdfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScanPdf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C177782126D9D2E1000B14F4 /* Build configuration list for PBXProject "ScanPdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C177784926D9D2E8000B14F4 /* Debug */,
+				C177784A26D9D2E8000B14F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C177784B26D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C177784C26D9D2E8000B14F4 /* Debug */,
+				C177784D26D9D2E8000B14F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C177784E26D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C177784F26D9D2E8000B14F4 /* Debug */,
+				C177785026D9D2E8000B14F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C177785126D9D2E8000B14F4 /* Build configuration list for PBXNativeTarget "ScanPdfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C177785226D9D2E8000B14F4 /* Debug */,
+				C177785326D9D2E8000B14F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C177785426D9E1F6000B14F4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		C177786426DA34E5000B14F4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com.cnpmjs.org/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C177785526D9E1F6000B14F4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C177785426D9E1F6000B14F4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		C177786526DA34E5000B14F4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C177786426DA34E5000B14F4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C177781E26D9D2E1000B14F4 /* Project object */;
+}
